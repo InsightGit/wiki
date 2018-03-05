@@ -6,7 +6,7 @@
 
 ### Prerequisites:
 - [Fiddler](https://www.telerik.com/fiddler) (or any other proxy software, though this guide is specific to Fiddler)
-- Homebrew on either your [WiiU](https://wiiu.hacks.guide)
+- Homebrew on your [WiiU](https://wiiu.hacks.guide)
 - Ensure both your console and PC are connected to the same internet connection
 
 ### Setup (Computer):
@@ -43,7 +43,7 @@ Quick note, you will need Mocha installed on your WiiU. If you followed the guid
 3. Launch the Homebrew Launcher and startup FTPiiU_Everywhere
 4. Connect to the FTP server on your computer using any FTP client (FileZilla/WinSCP on Windows or Finder on MacOS for example)
 5. Navigate to `/vol/storage_mlc01/sys/title/0005001b/10054000/content`
-6. Enter `scerts` and replace the `CACERT_NINTENDO_CA_G3.der` file there with the `CACERT_NINTENDO_CA_G3.der` file we just made earlier from the FiddlerRoot.cer. AGAIN MAKE SURE TO CHECK THE FILE EXTENSION, IT MUST BE `.der`
+6. Enter `scerts` and replace the `CACERT_NINTENDO_CA_G3.der` file there with the `CACERT_NINTENDO_CA_G3.der` file we just made earlier from the FiddlerRoot.cer (MAKE SURE TO BACK UP THE ORIGINAL). AGAIN MAKE SURE TO CHECK THE FILE EXTENSION, IT MUST BE `.der`
 7. Close the FTP connection on your computer and exit FTPiiU_Everywhere (press Home button)
 8. Reboot your console (DO NOT FORCE REBOOT (holding power button for 4 seconds)! REBOOT NORMALLY (only hold for 2 seconds)! FORCE REBOOTING CAN SOMETIMES ERASE CHANGES!)
 9. Go to the connection settings for your WiFi connection on your WiiU and turn on proxy connections
