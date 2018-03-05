@@ -1,14 +1,14 @@
-# Setup guide for basic REing, for development
+# Setup guide for basic REing on the WiiU, for development
 
 
 ### Prerequisites:
 - [Fiddler](https://www.telerik.com/fiddler) (or any other proxy software, though this guide is specific to Fiddler)
 - [WireShark](https://www.wireshark.org/)
 - [VirtualRouter](https://archive.codeplex.com/?p=virtualrouter) (used to easily turn your Windows PC into a hotspot. This can be done without this software, however I find that it makes it easier)
-- Homebrew on your [WiiU](https://wiiu.hacks.guide) or [3DS](https://3ds.hacks.guide) (depending on which console you want to RE for)
+- Homebrew on your [WiiU](https://wiiu.hacks.guide)
 - [NodeJS](https://nodejs.org/en/) (our servers are written in Node)
 
-### Setup (Computer):
+# Setup (Computer):
 1. In Fiddler, open `Tools > Options`
 2. In the `HTTPS` tab turn on HTTPS Connects
 3. Enable HTTPS decrypting
@@ -19,13 +19,8 @@
 8. Rename `FiddlerRoot.cer` to `CACERT_NINTENDO_CA_G3.der` wherever you exported it to. NOTE: MAKE SURE TO CHECK THE FILE EXTENSION. IT SHOULD BE `.der` NOT `.cer`
 9. Go complete one of the console sections
 
-# Setup (Consoles)
-
-### WiiU:
+# Setup (WiiU)
 1. Install FTPiiU_Everywhere (NOT THE REGULAR FTPiiU!)
-
-### 3DS:
-1. Wait for whiskers to set this up
 
 # Sniffing and REing requests
 
@@ -57,10 +52,3 @@ You should now see all HTTP(S) traffic from your console feeding into Fiddler. W
 8. Apply the filter `ip.addr eq YOUR.WIIU.CONSOLE.IP && udp`
 
 You should now see all UDP/PRUDP packets being sent to and from the WiiU. Unpack the packets and decrypt the payload, and you will be able to being REing the packet
-
-## 3DS
-### HTTP
-Wait for whiskers
-
-### PRUDP/UDP (THIS IS WHAT GAMES USE)
-Wait for whiskers
