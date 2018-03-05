@@ -6,7 +6,7 @@
 - [WireShark](https://www.wireshark.org/)
 - [VirtualRouter](https://archive.codeplex.com/?p=virtualrouter) (used to easily turn your Windows PC into a hotspot. This can be done without this software, however I find that it makes it easier)
 - Homebrew on your [WiiU](https://wiiu.hacks.guide) or [3DS](https://3ds.hacks.guide) (depending on which console you want to RE for)
-- [NodeJS](https://nodejs.org/en/)
+- [NodeJS](https://nodejs.org/en/) (our servers are written in Node)
 
 ### Setup (Computer):
 1. In Fiddler, open `Tools > Options`
